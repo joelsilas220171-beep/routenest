@@ -12,6 +12,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./routenest_bus_ticket_reservation
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
